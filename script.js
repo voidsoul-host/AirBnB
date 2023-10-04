@@ -116,7 +116,7 @@ searchByLocationbtn.addEventListener("click", async (e) => {
     const result = await response.text();
     localStorage.setItem("listingItems", JSON.stringify(result));
     localStorage.setItem("location", `${JSON.stringify(locationTerm)}`);
-    redirectPage("/listing.html");
+    redirectPage("/AirBnB/listing.html");
   } catch (error) {
     console.error(error);
   }

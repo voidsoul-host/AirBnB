@@ -22,7 +22,7 @@ function renderDataToUI(dataList) {
     let housediv = document.createElement("div");
     housediv.className = "house";
     housediv.innerHTML = `<div class="house-img">
-                    <a href="house.html"><img src="${item.images[0]}"/></a>
+                    <a href="/AirBnB/house.html"><img src="${item.images[0]}"/></a>
                 </div>
                 <div class="house-info">
                     <p>Property in ${locationTerm}</p>
@@ -41,7 +41,7 @@ function renderDataToUI(dataList) {
     housediv.addEventListener("click", () => {
 
       localStorage.setItem("houseItem", `${JSON.stringify(item)}`);
-      redirectPage(`/house.html`);
+      redirectPage(`/AirBnB/house.html`);
     });
     listContainer.append(housediv);
   });

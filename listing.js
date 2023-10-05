@@ -41,7 +41,7 @@ function renderDataToUI(dataList) {
     housediv.addEventListener("click", () => {
 
       localStorage.setItem("houseItem", `${JSON.stringify(item)}`);
-      redirectPage(`/AirBnB/house.html`);
+      redirectPage('house.html');
     });
     listContainer.append(housediv);
   });
